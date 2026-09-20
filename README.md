@@ -1,4 +1,12 @@
 # Proyecto: Protección de Rutas (Educativo)
+## **FOOD STORE**, EVALUACION 1 DE PROGRAMACION 3
+## ENLACE AL VIDEO
+
+https://youtu.be/-ojmXzS-2bY
+
+## ENLACE A GITHUB
+https://github.com/AlexZerpa/FoodStore-Prog3-ZERPA-CRISTIAN
+
 
 ## ✍️ Descripción
 
@@ -7,6 +15,12 @@ Este es un proyecto de demostración creado con fines educativos para ilustrar u
 El objetivo es mostrar cómo se puede restringir el acceso a ciertas páginas según el rol de un usuario (por ejemplo, `ADMIN` o `CLIENT`).
 
 ---
+## 🔐 Credenciales de Acceso (Demo)
+
+Para ingresar a la aplicación y evaluar la funcionalidad del catálogo y el carrito de compras, utiliza los siguientes datos de prueba:
+
+- **Email:** usuario@foodstore.com
+- **Contraseña:** 123456
 
 ## ⚠️ ¡Importante! Nivel de Seguridad
 

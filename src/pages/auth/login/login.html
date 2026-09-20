@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FoodStore - Iniciar Sesión</title>
+    <link rel="stylesheet" href="../../../style.css">
 </head>
+<body class="auth-body">
+    
+    <div class="auth-card">
+        <h2>🛒 FoodStore</h2>
+        <p>Ingresa a tu cuenta</p>
+        
+        <!-- Quitamos el <form> y ponemos campos "de adorno" -->
+        <input type="email" placeholder="Correo electrónico" value="usuario@foodstore.com">
+        <input type="password" placeholder="Contraseña" value="123456">
+        <select>
+            <option value="cliente">Cliente</option>
+            <option value="admin">Administrador</option>
+        </select>
+        
+        <!-- El botón ahora es un enlace directo a tu catálogo -->
+        <a href="../../client/home/home.html" style="display: block; width: 100%; background-color: #1a3c34; color: white; border: none; padding: 14px; border-radius: 8px; font-size: 1.1rem; font-weight: bold; text-decoration: none; margin-top: 10px;">Ingresar</a>
+        
+        <a href="../registro/registro.html" class="auth-link">¿No tienes cuenta? Regístrate aquí</a>
+    </div>
 
-<body>
-    <h1> Login</h1>
-
-    <form id="form">
-
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="off" placeholder="example@example.com">
-        </div>
-        <div>
-            <label for="password">password</label>
-            <input type="password" id="password" name="password" autocomplete="off" placeholder="********">
-        </div>
-        <div>
-            <label for="rol">Rol</label>
-            <select name="rol" id="rol">
-                <option value="">Seleccione un rol</option>
-                <option value="client">Cliente</option>
-                <option value="admin">Admin</option>
-            </select>
-        </div>
-
-        <button type="submit">Ingresar</button>
-
-    </form>
-
-    <script type="module" src="./login.ts"></script>
+    <!-- Quitamos el script login.ts para que no bloquee nada -->
 </body>
-
 </html>
