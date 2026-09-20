@@ -2,21 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Catálogo</title>
+    <title>FoodStore - Catálogo</title>
+    <link rel="stylesheet" href="../../../style.css">
 </head>
 <body>
     <header>
-        <h1>Catálogo de Productos</h1>
-        <a href="../cart/cart.html">Ir al Carrito</a>
+        <h1>🛒 FoodStore</h1>
+        <nav>
+            <a href="#">Catálogo</a> 
+            <a href="../cart/cart.html">Carrito <span id="cart-count-header">(0)</span></a>
+        </nav>
     </header>
-    <main>
-        <div>
-            <input type="text" id="search-input" placeholder="Buscar producto...">
+    <main class="main-container">
+        <aside>
             <h3>Categorías</h3>
             <ul id="category-list"></ul>
-        </div>
-        <div id="product-container"></div>
-        <p id="no-results" style="display: none;">No se encontraron productos.</p>
+        </aside>
+        <section>
+            <input type="text" id="search-input" class="search-bar" placeholder="🔍 Buscar productos...">
+            
+            <!-- Agregamos este párrafo para el contador de la categoría -->
+            <p id="category-info" style="color: #555; background: #eef2f0; padding: 8px 15px; border-radius: 20px; display: inline-block; margin-bottom: 20px; font-size: 0.9rem; font-weight: bold;"></p>
+            
+            <div id="product-container" class="products-grid"></div>
+            <div id="no-results" style="display: none; text-align: center; margin-top: 50px; color: #888;">
+                <h3>No se encontraron productos.</h3>
+            </div>
+        </section>
     </main>
     <script type="module" src="./home.ts"></script>
 </body>
